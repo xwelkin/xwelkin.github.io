@@ -249,7 +249,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-03-15 17:36:54 / 修改时间：17:41:21" itemprop="dateCreated datePublished" datetime="2024-03-15T17:36:54+08:00">2024-03-15</time>
+              <time title="创建时间：2024-03-15 17:36:54 / 修改时间：18:42:52" itemprop="dateCreated datePublished" datetime="2024-03-15T17:36:54+08:00">2024-03-15</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -272,7 +272,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <h3 id="1-过程"><a href="#1-过程" class="headerlink" title="1  过程"></a>1  过程</h3><p><strong>a.从起点出发找最小距离，找确定值</strong></p>
+<p>局部最短路径必是整体最短路径的一部分。相邻点的最小值就是这个点的最短路径<em>（2.1证明）</em>，并记录为确定点。</p>
+<p><strong>b.从确定点出发，重复a</strong></p>
+<p>初始时会记录初始distance集合(dis)，再次出发时，更新dis，并在dis里找到最小距离，得到新的确定点（2.2证明）。事实上就是不断从确定点出发找最小距离（起点可看作距离为0的确定点）。</p>
+
       
     </div>
 
